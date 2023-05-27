@@ -1,0 +1,552 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 100vh;
+    padding: 30px 50px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.navlinks ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.navlinks ul li{
+    margin-right: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navlinks ul li:last-child{
+    margin-right: 0;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+}
+
+.signup{
+  display: flex;
+  align-items: center;
+}
+
+.signup-div{
+    width: 50%;
+}
+
+.signup-div h2{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    color: hsl(243, 87%, 12%);
+}
+
+.signup-div p{
+    color: hsl(243, 87%, 12%);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.signup-form{
+    display: flex;
+    width: 100%;
+}
+
+.signup-div form input{
+    font-size: 15px;
+    width: 87%;
+    padding: 10px 20px;
+    border: 1px solid hsl(238, 22%, 44%);
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.signup-div form input.active{
+    border-color: red;
+}
+
+.signup-input{
+    width: 50%;
+}
+
+.submit-btn{
+    margin-left: 15px;
+    padding: 10px 15px;
+    height: 40px;
+    width: 35%;
+    cursor: pointer;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity .2s;
+}
+
+.error-message{
+    color: red !important;
+    margin-top: 10px;
+    font-size: 16px !important;
+    display: none;
+}
+
+.error-message.active{
+    display: block;
+}
+
+.signup-img{
+    width: 50%;
+}
+
+.signup-img picture{
+    width: 100%;
+}
+
+.signup-img picture img{
+    width: 100%;
+}
+
+#content-section{
+    height: 100vh;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.main-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.details{
+    width: 50%;
+}
+
+.details h2{
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    color: hsl(243, 87%, 12%);
+}
+
+.details p{
+    color: hsl(243, 87%, 12%);
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.how-it-works{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 3rem;
+}
+
+.how-it-works p{
+    margin-bottom: unset;
+    margin-right: 4px;
+    color: hsl(170, 45%, 43%);
+    font-size: 14px;
+}
+
+.testimonial{
+    width: 65%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quotes{
+    height: 25px;
+}
+
+.testimonial p{
+    line-height: 2rem;
+    font-weight: 15px;
+}
+
+.reviewer{
+    display: flex;
+}
+
+.reviewer img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.reveiwer-details p{
+    margin-bottom: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: unset;
+}
+
+.reveiwer-details span{
+    font-size: 13px;
+    color: hsl(238, 22%, 44%);
+}
+
+.details-img{
+    width: 50%;
+}
+
+.details-img img{
+    width: 100%;
+}
+
+
+/*---------cta-section--------*/
+
+#cta-section{
+    padding: 30px 50px;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-details{
+    width: 600px
+}
+
+.cta-details h2{
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.cta-details p{
+    font-size: 16px;
+    width: 90%;
+    color: hsl(240, 75%, 98%);
+}
+
+.cta-form{
+    width: 400px
+}
+
+.cta-form form input{
+    display: block;
+    width: 95%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-input.active{
+    border: 1px solid red;
+}
+
+.cta-error{
+    color: hsl(240, 75%, 98%);
+    font-size: 14px;
+    display: none;
+}
+
+.cta-error.active{
+    display: block;
+}
+
+.cta-input-div{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.cta-submit{
+    padding: 10px 15px;
+    width: 50%;
+    cursor: pointer;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity .2s;
+}
+
+#footer-section{
+    background-color: hsl(243, 87%, 12%);
+    padding: 30px 50px;
+}
+
+.footer-logo{
+    margin-bottom: 25px;
+}
+
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.phone div{
+    display: flex;
+    align-items: center;
+    color: hsl(240, 75%, 98%);
+    margin-bottom: 10px;
+}
+
+.phone div img{
+    margin-right: 10px;
+    height: 15px;
+}
+
+.footer-content ul{
+    list-style-type: none;
+}
+
+.footer-content ul li{
+    margin-bottom: 15px;
+}
+
+.footer-content ul li a{
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+} 
+
+.footer-content ul li a:hover{
+    color: hsl(0, 0%, 75%);
+}
+
+.socials{
+    display: flex;
+}
+
+.social-div{
+    border: 2px solid hsl(240, 75%, 98%);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-div i{
+    font-size: 18px;
+    color: hsl(240, 75%, 98%);
+}
+
+.social-div:hover{
+    border-color: hsl(238, 22%, 44%);
+}
+
+.social-div:hover i{
+    color: hsl(238, 22%, 44%);
+}
+
+.submit-btn:active, .cta-submit:active{
+    opacity: .7;
+}
+
+footer{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.attribution{
+    text-align: center;
+    color: hsl(238, 22%, 44%);
+}
+
+.attribution a{
+    color: white;
+    transition: color .2s;
+}
+
+.attribution a:hover{
+    color: gray;
+}
+
+
+
+/*---------for small screen------*/
+
+@media screen and (max-width: 900px){
+    .logo img{
+        width: 90px;
+    }
+
+    .navlinks ul li{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    header{
+        height: auto;
+        margin-bottom: 20px;
+        padding: 30px 20px;
+    }
+
+    .signup{
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+    }
+
+    .signup-img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .signup-div{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .signup-div h2{
+        font-size: 30px;
+    }
+
+    .signup-div p{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .signup-div form input{
+        width: 88%;
+        margin-bottom: 5px;
+    }
+
+    .signup-input{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .error-message{
+        margin: 0;
+        padding: 0;
+    }
+
+    .signup-form{
+        display: block;
+    }
+
+    .submit-btn{
+        width: 100%;
+        margin-left: unset;
+    }
+
+    #content-section{
+        background-image: url(images/bg-curve-mobile.svg);
+        height: unset;
+    }
+    
+    .main-content{
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+    }
+
+    .details{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .details h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .details p{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .details-img{
+        width: 100%;
+    }
+
+    .testimonial{
+        width: 95%;
+    }
+
+    #cta-section{
+        display: block;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .cta-details{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .cta-details p{
+        width: 100%;
+    }
+
+    .cta-form{
+        width: 100%;
+    }
+
+    .cta-submit{
+        width: 100%;
+    }
+
+    #footer-section{
+        padding: 30px 20px;
+    }
+
+    .footer-content{
+        display: block;
+    }
+
+    .phone{
+        margin-bottom: 4rem;
+    }
+
+    .about{
+        margin-bottom: 4rem;
+    }
+
+    .contacts{
+        margin-bottom: 4rem;
+    }
+
+    .socials{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .attribution{
+        font-size: 15px;
+    }
+}
